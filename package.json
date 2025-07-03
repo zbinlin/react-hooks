@@ -1,0 +1,78 @@
+{
+  "name": "@cites/react-hooks",
+  "description": "React hooks",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf .cache",
+    "build": "tsc --build",
+    "prepublishOnly": "npm run clean && npm run build",
+    "pretest": "npm run build",
+    "test": "node --test './dist/**/*.test.js'"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/core/index.js",
+      "types": "./dist/core/index.d.ts"
+    },
+    "./useBoundingClientRect": {
+      "default": "./dist/core/useBoundingClientRect.js",
+      "types": "./dist/core/useBoundingClientRect.d.ts"
+    },
+    "./useComposedRefs": {
+      "default": "./dist/core/useComposedRefs.js",
+      "types": "./dist/core/useComposedRefs.d.ts"
+    },
+    "./useDraggable": {
+      "default": "./dist/core/useDraggable.js",
+      "types": "./dist/core/useDraggable.d.ts"
+    },
+    "./useEventCallback": {
+      "default": "./dist/core/useEventCallback.js",
+      "types": "./dist/core/useEventCallback.d.ts"
+    },
+    "./useIsomorphicLayoutEffect": {
+      "default": "./dist/core/useIsomorphicLayoutEffect.js",
+      "types": "./dist/core/useIsomorphicLayoutEffect.d.ts"
+    },
+    "./useCustomScroller": {
+      "default": "./dist/core/useCustomScroller.js",
+      "types": "./dist/core/useCustomScroller.d.ts"
+    },
+    "./useKeepActiveItemIntoView": {
+      "default": "./dist/core/useKeepActiveItemIntoView.js",
+      "types": "./dist/core/useKeepActiveItemIntoView.d.ts"
+    },
+    "./useScrollIntoViewHelper": {
+      "default": "./dist/core/useScrollIntoViewHelper.js",
+      "types": "./dist/core/useScrollIntoViewHelper.d.ts"
+    }
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "Colin Cheng <zbinlin@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbinlin/react-hooks.git"
+  },
+  "files": [
+    "./dist/",
+    "README.md"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.15.19",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  }
+}

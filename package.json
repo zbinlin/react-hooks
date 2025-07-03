@@ -12,8 +12,8 @@
   },
   "exports": {
     ".": {
-      "default": "./dist/core/index.js",
-      "types": "./dist/core/index.d.ts"
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./useBoundingClientRect": {
       "default": "./dist/core/useBoundingClientRect.js",

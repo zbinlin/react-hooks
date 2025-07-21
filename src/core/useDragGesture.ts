@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback, useEffect } from "react";
-import { useEventCallback } from "./useEventCallback"; // 根据你的实际路径调整
+import { useEventCallback } from "./useEventCallback.js"; // 根据你的实际路径调整
 
 interface Point {
     x: number;
